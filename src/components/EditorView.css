@@ -1,0 +1,73 @@
+ .container{
+  position: relative;
+  left: 15%;
+  top: 20%;
+ }
+
+ .conatiner1{
+  display: inline-block;
+  width: 30%;
+  border: 1px solid black;
+
+}
+
+.editor-label{
+  background-color: rgba(0, 255, 13, 0.616);
+  display: block;
+  border: 1px solid black;
+  padding: 3px;
+  width: 29.85%;
+
+}
+.editor-textarea{
+  min-width: 30%;
+  max-width: 400px;
+  min-height: 200px;
+}
+.container2{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 30%;
+}
+
+.prev-label{
+  background-color: rgba(0, 255, 13, 0.616);
+  display: block;
+  padding: 3px;
+  border: 1px solid black;
+  width: 98.45%;
+}
+.prev-block{
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 400px) {
+  .container{
+    display: block;
+    position: static;
+    width: 100%;
+  }
+
+  .container1,.editor-label{
+    display: block;
+    position: static;
+    width: 95%;
+  }
+
+  .container2{
+    display: block;
+    position: static;
+    width: 100%;
+    overflow: scroll;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .editor-textarea{
+    width: 95%;
+  }
+}
